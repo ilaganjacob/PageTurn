@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
+
 app.get('/', (req, res) => {
-  res.send('The root route is working!');
+  res.send('PageTurn API is running!');
 });
 
 app.listen(port, () => {
