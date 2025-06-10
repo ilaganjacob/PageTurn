@@ -6,7 +6,7 @@ class User {
     this.lastName = lastName;
     this.email = email;
     this.booksRead = [];
-    this.favouriteGenre = ['Nothing yet'];
+    this.favouriteGenre = [];
   }
 
   get fullName() {
@@ -22,6 +22,6 @@ class User {
   }
 
   analyzeUser() {
-    return `${this.getFullName()}'s favourite genre is: ${this.favouriteGenre[0]}`;
+    return `${this.getFullName()}'s favourite genre is: ${this.favouriteGenre[0] || 'nothing yet!'}`;
   }
 }
